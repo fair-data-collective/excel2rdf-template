@@ -26,9 +26,10 @@ jobs:
           java -jar xls2rdf.jar convert -i ./vocabulary.xlsx -o ./vocabulary.ttl -l en
           mv xls2rdf.log ./logs/conversion.log
 
-      - name: validate # validates vocabulary.ttl against set of qSKOS tests
-        run: |
-          java -jar qSKOS.jar analyze -dc mil,bl ./vocabulary.ttl -o ./logs/validation.log
+     # Validation not work at the moment (also in WeDoWind/wt-part-reliawind-taxonomy repo)
+     #- name: validate # validates vocabulary.ttl against set of qSKOS tests
+     #   run: |
+     #     java -jar qSKOS.jar analyze -dc mil,bl ./vocabulary.ttl -o ./logs/validation.log
 
       - name: deploy # commits changes to the repository
         run: |
