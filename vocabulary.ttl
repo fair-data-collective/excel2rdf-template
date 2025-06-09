@@ -12,10 +12,10 @@
   dct:creator <https://orcid.org/0000-0001-6875-5360>, <https://orcid.org/0000-0002-9381-9693>,
     <https://orcid.org/0000-0003-2195-3997>;
   dct:description "This is a template for building a SKOS-based controlled vocabulary. It is used as base of the worflow described in excel2rdf.readthedocs.io/"@en;
-  dct:modified "2025-05-29T17:18:00-07:00"^^xsd:datetime;
+  dct:modified "2025-06-08T18:46:00-07:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Example template for building SKOS vocabularies"@en;
-  owl:versionInfo "0.6"@en;
+  owl:versionInfo "0.6.1"@en;
   skos:hasTopConcept ex-voc:VeryTopConcept;
   skos:prefLabel "Example template for building SKOS vocabularies"@en;
   foaf:homepage <https://github.com/fair-data-collective/excel2rdf-template> .
