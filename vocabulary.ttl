@@ -15,7 +15,7 @@
   dct:modified "2025-05-29T17:18:00-07:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Example template for building SKOS vocabularies"@en;
-  owl:versionInfo "0.5.0"@en;
+  owl:versionInfo "0.6"@en;
   skos:hasTopConcept ex-voc:VeryTopConcept;
   skos:prefLabel "Example template for building SKOS vocabularies"@en;
   foaf:homepage <https://github.com/fair-data-collective/excel2rdf-template> .
@@ -60,12 +60,13 @@ ex-voc:TopConceptTwo a skos:Concept;
   skos:broader ex-voc:VeryTopConcept;
   skos:definition "This is yet another top concept which is used to collect a number of narrower concepts."@en;
   skos:inScheme <https://github.com/fair-data-collective/excel2rdf-template>;
+  skos:narrower ex-voc:NarrowConceptFour, ex-voc:NarrowConceptThree;
   skos:prefLabel "Top Concept Two"@en .
 
 ex-voc:NarrowConceptThree a skos:Concept;
   dct:contributor <https://orcid.org/0000-0001-6875-5360>;
   dct:creator <https://orcid.org/0000-0002-9381-9693>;
-  skos:broader "temp-vocab:TopConceptTwo"@en;
+  skos:broader ex-voc:TopConceptTwo;
   skos:definition "A definition of NarrowConceptThree, which has a broader concept TopConceptTwo."@en;
   skos:inScheme <https://github.com/fair-data-collective/excel2rdf-template>;
   skos:prefLabel "Narrow Concept Three"@en .
@@ -73,7 +74,7 @@ ex-voc:NarrowConceptThree a skos:Concept;
 ex-voc:NarrowConceptFour a skos:Concept;
   dct:contributor <https://orcid.org/0000-0001-6875-5360>;
   dct:creator <https://orcid.org/0000-0002-9381-9693>;
-  skos:broader "temp-vocab:TopConceptTwo"@en;
+  skos:broader ex-voc:TopConceptTwo;
   skos:definition "A definition of NarrowConceptFour, which has a broader concept TopConceptTwo."@en;
   skos:inScheme <https://github.com/fair-data-collective/excel2rdf-template>;
   skos:prefLabel "Narrow Concept Four"@en .
